@@ -2,22 +2,16 @@ let teste = true
 window.addEventListener('click', e =>{
   el = e.target
   if(el.classList.contains('circle') ===  true){
-
-    if(el.style.left === '0px'){
-      el.style.right= '0px'
-      mudaTema()
-      return
-    }else if(el.style.right === '0px')
-    {
-      el.style.left = '0px'
+    if(el.classList.contains('right') == true){
+      el.classList.remove('right')
+      el.classList.add('left')
       voltaTema()
-      return
     }else{
-      el.style.right = '0px'
+      el.classList.add('right')
+      el.classList.remove('left')
       mudaTema()
     }
-    
-  }
+}
 })
 
 function mudaTema(){
