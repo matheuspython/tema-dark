@@ -36,7 +36,9 @@ header#header nav #swicher .circle{
 }
 .left{
   left: 0;
+  background-color: #80FF72;
 }
 .right{
   right: 0;
+  background-color: #207e16;
 }

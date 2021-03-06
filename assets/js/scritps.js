@@ -17,6 +17,7 @@ window.addEventListener('click', e =>{
       el.classList.add('right')
       el.classList.remove('left')
       mudaTema()}}})
+      
 
 function mudaTema(){
   elementosQueMudarão[0].background = '#252525'
