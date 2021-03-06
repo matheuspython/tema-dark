@@ -1,0 +1,33 @@
+header#header{
+  width: 100%;
+  background-color:#7EE8FA;
+color: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1280px;
+margin: 0 auto;
+
+padding: 0 1%;
+height: 50px;
+}
+header#header nav #swicher{
+  width: 80px;
+  height: 10px;
+  background-color: rgb(15, 131, 131);
+  border-radius: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: .4s;
+}
+header#header nav #swicher .circle{
+  width: 35px;
+  height: 35px;
+  background-color: #80FF72;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  transition: .4s;
+
+}
