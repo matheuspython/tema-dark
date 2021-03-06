@@ -8,6 +8,7 @@ justify-content: space-between;
 max-width: 1280px;
 margin: 0 auto;
 
+
 padding: 0 1%;
 height: 50px;
 }
@@ -19,6 +20,7 @@ header#header nav #swicher{
   position: relative;
   display: flex;
   align-items: center;
+  /*justify-content: ;*/
   transition: .4s;
 }
 header#header nav #swicher .circle{
@@ -29,5 +31,12 @@ header#header nav #swicher .circle{
   cursor: pointer;
   position: absolute;
   transition: .4s;
+  
 
+}
+.left{
+  left: 0;
+}
+.right{
+  right: 0;
 }
