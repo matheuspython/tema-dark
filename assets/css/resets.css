@@ -8,3 +8,6 @@ html,body{
   height: 100%;
   font-family: sans-serif;
 }
+body{
+  background-color: rgb(253, 253, 253);
+}
