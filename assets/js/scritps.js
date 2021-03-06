@@ -1,4 +1,11 @@
-let teste = true
+const elementosQueMudarão = [
+  document.querySelector('body').style,
+  document.querySelector('header#header').style,
+  document.querySelector('.circle').style.background
+]
+
+
+
 window.addEventListener('click', e =>{
   el = e.target
   if(el.classList.contains('circle') ===  true){
@@ -9,22 +16,19 @@ window.addEventListener('click', e =>{
     }else{
       el.classList.add('right')
       el.classList.remove('left')
-      mudaTema()
-    }
-}
-})
+      mudaTema()}}})
 
 function mudaTema(){
-  const corpo = document.querySelector('body').style.background = '#252525'
-  const header = document.querySelector('header#header')
-  header.style.background = '#8F2D56'
-  header.style.color = 'white'
-  const ciculo = document.querySelector('.circle').style.background = '#73D2DE'
+  elementosQueMudarão[0].background = '#252525'
+  elementosQueMudarão[0].color = 'white'
+  elementosQueMudarão[1].background = '#8F2D56'
+  elementosQueMudarão[1].color = 'white'
+  elementosQueMudarão[2] = '#73D2DE'
 }
 function voltaTema(){
-  const corpo = document.querySelector('body').style.background = 'white'
-  const header = document.querySelector('header#header')
-  header.style.background = '#7EE8FA'
-  header.style.color = 'black'
-  const ciculo = document.querySelector('.circle').style.background = '#80FF72'
+  elementosQueMudarão[0].background = 'white'
+  elementosQueMudarão[0].color = 'black'
+  elementosQueMudarão[1].background = '#7EE8FA'
+  elementosQueMudarão[1].color = 'black'
+  elementosQueMudarão[2] = '#80FF72'
 }
